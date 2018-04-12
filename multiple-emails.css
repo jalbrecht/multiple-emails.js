@@ -24,6 +24,10 @@
 	outline: thin auto red !important; 
 }
 
+.multiple_emails-container .multiple_emails-ul {
+  min-height: 100px;
+}
+
 .multiple_emails-container ul {	
 	list-style-type:none; 
 	padding-left: 0; 
