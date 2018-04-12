@@ -17,5 +17,11 @@ This is an improved version of the original work of Jamie Bradley http://t2a.co/
 	$(selector).multiple_emails({
 	   position: 'top', // Display the added emails above the input
 	   theme: 'bootstrap', // Bootstrap is the default theme
-	   checkDupEmail: true // Should check for duplicate emails added
+	   checkDupEmail: true, // Should check for duplicate emails added
+	   onAdd: function(email) { // Callback when an email is added
+	      console.log('added email', email);
+	   },
+	   onDel: function(email) { // Callback when an email is deleted
+	      console.log('deleted email', email);
+	   }
 	});
